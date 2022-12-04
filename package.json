@@ -6,6 +6,7 @@
     "scripts": {
         "build": "webpack --config webpack.prod.js",
         "dev": "webpack -w --config webpack.dev.js",
+        
         "test": "jest --config=jest.config.js",
         "lint": "eslint --fix -c ./.eslintrc.js \"src/**/*.ts*\"",
         "prettify": "prettier --write \"src/**/*.ts*\"",
@@ -61,9 +62,19 @@
         "typescript": "^4.0.3",
         "webpack": "^5.65.0",
         "webpack-cli": "^4.9.1",
-        "webpack-merge": "^5.8.0"
+        "webpack-merge": "^5.8.0",
+        "buffer": "^6.0.3",
+        "process": "^0.11.10",
+        "stream-browserify": "^3.0.0"
     },
     "dependencies": {
+        "@account-abstraction/contracts": "file:../account-abstraction/contracts",
+        "@account-abstraction/sdk": "file:../bundler/packages/sdk",
+        "@account-abstraction/utils": "^0.3.0",
+        "@ethersproject/abi": "^5.7.0",
+        "@ethersproject/properties": "^5.7.0",
+        "@ethersproject/providers": "^5.7.0",
+        "ethers": "^5.7.0",
         "@types/react-router-dom": "^5.3.3",
         "classnames": "^2.3.1",
         "daisyui": "^2.20.0",

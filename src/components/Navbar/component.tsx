@@ -13,6 +13,10 @@ export function Navbar({ backUrl }: IProps) {
     const doLockWallet = async () => {
         // sdk.wallet.lockWallet();
     };
+
+    const resetWallet = async () => {
+        localStorage.clear();
+    };
     const doRecoverWallet = async () => {
         // sdk.wallet.recoverWallet();
     };
@@ -53,6 +57,10 @@ export function Navbar({ backUrl }: IProps) {
 
                         <li>
                             <Link to="/recover-wallet">Recover Wallet</Link>
+                        </li>
+
+                        <li>
+                            <a onClick={resetWallet}>Reset Account</a>
                         </li>
                     </ul>
                 </div>

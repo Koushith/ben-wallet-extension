@@ -11,7 +11,7 @@ export default function GuardianDetail() {
     return (
         <>
             <Navbar backUrl="/wallet" />
-            <AccountInfo account={"0x123123123123123123123"} action="remove" />
+            <AccountInfo action="remove" />
         </>
     );
 }

@@ -17,6 +17,7 @@ export default function Actions() {
                 <img className="w-6 mb-2" src={IconReceive} />
                 <div>Receive</div>
             </label>
+
             <a className="w-1/2 flex flex-col justify-center items-center cursor-pointer text-base py-6 hover:bg-gray-200">
                 <img className="w-6 mb-2" src={IconSend} />
                 <div>Send</div>

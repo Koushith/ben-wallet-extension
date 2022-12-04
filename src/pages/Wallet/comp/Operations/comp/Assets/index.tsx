@@ -6,7 +6,7 @@ const assetsList = [
     {
         icon: IconETH,
         symbol: "ETH",
-        balance: "100000",
+        balance: "0",
     },
 ];
 

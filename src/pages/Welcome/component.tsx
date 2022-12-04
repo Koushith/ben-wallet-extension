@@ -4,6 +4,7 @@ import LogoText from "@src/assets/logo-text.svg";
 import { Link } from "react-router-dom";
 import sdk from "@src/sdk";
 import config from "@src/config";
+import { WalletContextProvider } from "@src/context/wallet-context";
 
 export function Welcome() {
     return (

@@ -1,4 +1,5 @@
 const path = require("path");
+const webpack = require("webpack");
 
 module.exports = {
     entry: {
@@ -48,5 +49,21 @@ module.exports = {
         alias: {
             "@src": path.resolve(__dirname, "src/"),
         },
+        fallback: {
+            "stream": require.resolve("stream-browserify"),
+            "buffer": require.resolve("buffer")
+        }
+
     },
+    plugins: [
+        // Work around for Buffer is undefined:
+        // https://github.com/webpack/changelog-v5/issues/10
+        new webpack.ProvidePlugin({
+            Buffer: ['buffer', 'Buffer'],
+        }),
+        new webpack.ProvidePlugin({
+            process: 'process/browser',
+        }),
+    ],
+
 };

@@ -9,10 +9,7 @@ export function Wallet() {
     return (
         <>
             <Navbar />
-            <AccountInfo
-                account="0x6b5cf860506c6291711478F54123312066944B3"
-                action="activate"
-            />
+            <AccountInfo action="activate" />
 
             <Actions />
 

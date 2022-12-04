@@ -36,7 +36,7 @@
     } */
 
     .input {
-        @apply rounded-full  bg-opacity-5 border-transparent;
+        @apply rounded-full  bg-opacity-5 ;
     }
 
     .bg-actions {

@@ -8,7 +8,7 @@ interface InputProps {
     placeholder?: string;
     verified?: boolean;
     value: string;
-    error: string;
+    error?: string;
     onChange: (value: string) => void;
 }
 
@@ -29,7 +29,7 @@ export function Input({
                 </label>
             )}
 
-            <div className="relative">
+            <div className="relative ">
                 <input
                     type={type}
                     value={value}
@@ -37,7 +37,12 @@ export function Input({
                         onChange(e.target.value);
                     }}
                     placeholder={placeholder}
-                    className={cn("input w-full", error && "input-error")}
+                    className={cn(
+                        "  w-full select-bordered ",
+                        "input",
+                        "input-bordered ",
+                        error && "input-error",
+                    )}
                 />
                 {verified && (
                     <img
