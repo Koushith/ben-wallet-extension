@@ -75,3 +75,8 @@ Ben-wallet-extension
 ## TODO
 
 [x] ignore browser dark mode setting
+
+
+### Credits
+
+Forked from https://github.com/orgs/proofofsoulprotocol/ 
